@@ -1,0 +1,152 @@
+body{
+    font-family: 'Halant', serif;
+    background-color: #fff5f8; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #ffcce1; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo{
+    font-size: 30px;
+    color: #f18caa;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f18caa;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: plum;
+    text-decoration: underline;
+}
+
+main{
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1{
+    color: #f18caa;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #ffcce1;
+    text-align: center;
+    padding: 15px;
+    color: #f18caa;
+    font-size: 15px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-me{
+    background:#ffcce1;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    grid-gap: 5% 5%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+.image-grid-item{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: plum;
+}
+
+.image-grid-item:hover .overlay{
+    opacity: 1;
+}
+
+.projects ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li{
+    background: #ffe5f1;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.projects li:hover{
+    transform: translateY(-5px);
+}
+
+.contact-me ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-me li{
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.contact-me a{
+    color: #f18caa;
+    transition: color 0.3s ease;
+}
